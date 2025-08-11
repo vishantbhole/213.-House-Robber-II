@@ -19,3 +19,8 @@ class Solution(object):
             return prev
 
         return max(helperRob(nums[1:]), helperRob(nums[:-1]) )
+
+if __name__ == "__main__":
+    sol = Solution()
+    nums = [2,3,2]
+    print("rob II is:", sol.rob2(nums))
